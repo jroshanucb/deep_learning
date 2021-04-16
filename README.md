@@ -2,3 +2,14 @@ Auto Regressive (AR) models use tokens generated in previous time-step as input 
 
 The AR model is implemented in std_transformer.py
 
+To run this code, ensure torchtext installed is set of version 0.6.0 (pip install torchtext==0.6.0)
+
+or change the import as follows to use the latest version of torchtexy (0.9.0)
+from torchtext.legacy.datasets import IWSLT, Multi30k
+
+setup python version to either 3.6.x or 3.8.x
+
+python std_transformer.py to train the model
+
+Training on https://gpu.land/ using a single GPU (Tesla V100) performs the best
+
